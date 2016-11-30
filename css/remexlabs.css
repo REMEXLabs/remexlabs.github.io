@@ -1,0 +1,17 @@
+
+header, main, footer {
+  width: 70%;
+  max-width: 800px;
+  min-width: 200px;
+  /* next 2 lines center the content; see http://stackoverflow.com/a/18200048/6002174 */
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+footer {
+    background-color: transparent;
+    color: #6F6F6F; /* #2FB7EC cannot be used for text on white background; contrast is too low */
+    border-top: 2px solid #2FB7EC;
+    margin-top: 40px;
+}
+

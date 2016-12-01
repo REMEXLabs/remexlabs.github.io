@@ -1,3 +1,14 @@
+@media all {
+
+body {
+  /*background-color: #EFEFEF;
+  background: -webkit-gradient(linear, 0 10, 0 100%, from(#fff), to(#ECECEC));
+  background: -moz-linear-gradient(#fff, #ECECEC);*/
+  background: linear-gradient(#fff, #ECECEC);
+  color: black;
+
+  font-family: 'Trebuchet MS', Calibri, Helvetica, sans-serif;
+}
 
 header, main, footer {
   width: 70%;
@@ -6,12 +17,60 @@ header, main, footer {
   /* next 2 lines center the content; see http://stackoverflow.com/a/18200048/6002174 */
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
+
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  color: black;
+}
+
+header {
+  margin-bottom: 40px;
 }
 
 footer {
-    background-color: transparent;
-    color: #6F6F6F; /* #2FB7EC cannot be used for text on white background; contrast is too low */
-    border-top: 2px solid #2FB7EC;
-    margin-top: 40px;
+  color: #3F3F3F; /* #2FB7EC cannot be used for text on white background; contrast is too low; #6F6F6F still fails at Level AAA */
+  border-top: 2px solid #E41C3B;/*#2FB7EC*/
+  border-bottom: 2px solid #E41C3B;
+  margin-top: 40px;
 }
+
+header, h2 {
+  border: 1px solid #DADADA;
+  background-color: #F5F5F5;
+  color: inherit;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding: 10px;
+}
+
+a:link/*, a:visited, a:hover, a:focus, a:active*/ {
+  text-decoration: underline;
+  color: #E41C3B; /* HdM's "hot pink" */
+  background-color: transparent;
+}
+a:hover, a:focus, a:active {
+  text-decoration: overline;
+  color: #E41C3B;
+  background-color: transparent;
+}
+
+
+
+} /* END @media all*/
+
+
+@media print {
+body {
+  background-color: white;
+  color: black;
+}
+header, main, footer {
+  width: 100%;
+}
+
+} /* END @media print*/
 

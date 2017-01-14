@@ -58,6 +58,9 @@ a:hover, a:focus, a:active {
   background-color: transparent;
 }
 
+iframe {
+  border: none;
+}
 iframe[src^="https://www.youtube.com/"] {
   margin-top: 10px;
 }

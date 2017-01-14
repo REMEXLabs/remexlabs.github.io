@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags must come first for Bootstrap. -->
+  <!--meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /-->
   <title>REMEXLabs Open Source Repositories</title>
+  <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/jumbotron-narrow.css" />
   <link rel="stylesheet" type="text/css" href="css/remexlabs.css" />
   <link rel="shortcut icon" href="img/hdmfavicon.ico" type="image/ico" />
   <meta content="noindex, nofollow" name="robots" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="jslibs/jquery-3.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="jslibs/bootstrap/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-
-<header>
-  <h1>REMEXLabs Open Source Repositories</h1>
-</header>
+<div>
+  <header class="jumbotron">
+    <h1>REMEXLabs Open Source Repositories</h1>
+    <p class="lead">GitHub repositories maintained by the
+      research group REMEX at Stuttgart Media University.
+    </p>
+  </header>
+</div>
 
 <main>
   <p>This page describes the
@@ -24,225 +43,234 @@
     student projects, etcetera.
   </p>
 
-  <h2>User Interface Personalisation</h2>
-  <h3>ASpanel</h3>
-  <p>The <a href="https://github.com/REMEXLabs/ASpanel">ASpanel</a> 
-    or Accessibility Support Panel is a component that can be built into
-    webpages to allow users to adapt certain aspects of the site to their needs.
-    This panel is mainly used in the 
-    <a href="#olb">online banking simulation</a> mentioned below.
-    <!-- orginally a student project; development continued as part of Prosperity4All -->
-  </p>
+  <!--div class="row"-->
+    <!--div class="col-lg-6"-->
+      <h2>User Interface Personalisation</h2>
+      <h3>ASpanel</h3>
+      <p>The <a href="https://github.com/REMEXLabs/ASpanel">ASpanel</a> 
+        or Accessibility Support Panel is a component that can be built into
+        webpages to allow users to adapt certain aspects of the site to their needs.
+        This panel is mainly used in the 
+        <a href="#olb">online banking simulation</a> mentioned below.
+        <!-- orginally a student project; development continued as part of Prosperity4All -->
+      </p>
 
-  <h3>gwc-chrome</h3>
-  <p><a href="https://github.com/REMEXLabs/gwc-chrome"><abbr>GPII</abbr> website connector for Chrome</a>
-    (gwc-chrome) is a browser extension for Chrome that enables a web application to
-    communicate with the 
-    <a href="https://wiki.gpii.net/w/Architecture_Overview#Flow_Manager"><abbr>GPII</abbr>'s local Flow Manager</a>.
-  </p>
+      <h3>gwc-chrome</h3>
+      <p><a href="https://github.com/REMEXLabs/gwc-chrome"><abbr>GPII</abbr> website connector for Chrome</a>
+        (gwc-chrome) is a browser extension for Chrome that enables a web application to
+        communicate with the 
+        <a href="https://wiki.gpii.net/w/Architecture_Overview#Flow_Manager"><abbr>GPII</abbr>'s local Flow Manager</a>.
+      </p>
 
-  <h3><abbr title="Accessible Web Components">AWC</abbr></h3>
-  <p><a href="https://github.com/REMEXLabs/AWC">Adaptive Web Components Framework (<abbr>AWC</abbr>)</a>.
-    Deployed at <a href="http://darwin.gpii.eu/">darwin.gpii.eu</a>; requires Google Chrome.
-  </p>
-  <p>This work is based on the World Wide Web Consortium's work on 
-    <a href="https://github.com/w3c/webcomponents">web components</a>,
-    which is still work in progress.
-    Google Chrome has the most advanved implementation of web components;
-    see Jon Rimmer's article
-    <a href="https://jonrimmer.github.io/are-we-componentized-yet/">Are We Componentized Yet?</a>
-  </p>
-  <p>For an introduction to Accessible Web Components, see the YouTube video
-    <a href="https://www.youtube.com/watch?v=ZuITbgUnNTk">Adaptive Web Components 2016 - Introduction</a>.
-    <br />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuITbgUnNTk" frameborder="0" allowfullscreen></iframe>
-  </p>
+      <h3><abbr title="Accessible Web Components">AWC</abbr></h3>
+      <p><a href="https://github.com/REMEXLabs/AWC">Adaptive Web Components Framework (<abbr>AWC</abbr>)</a>.
+        Deployed at <a href="http://darwin.gpii.eu/">darwin.gpii.eu</a>; requires Google Chrome.
+      </p>
+      <p>This work is based on the World Wide Web Consortium's work on 
+        <a href="https://github.com/w3c/webcomponents">web components</a>,
+        which is still work in progress.
+        Google Chrome has the most advanved implementation of web components;
+        see Jon Rimmer's article
+        <a href="https://jonrimmer.github.io/are-we-componentized-yet/">Are We Componentized Yet?</a>
+      </p>
+      <p>For an introduction to Accessible Web Components, see the YouTube video
+        <a href="https://www.youtube.com/watch?v=ZuITbgUnNTk">Adaptive Web Components 2016 - Introduction</a>.
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuITbgUnNTk" allowfullscreen></iframe>
+      </p>
 
-  <h3>Darwin</h3>
-  <p><a href="https://github.com/REMEXLabs/Darwin">Darwin</a>:
-    a Javascript framework for adaptive Web Components with 
-    <a href="http://gpii.net/"><abbr>GPII</abbr></a> support.
-  </p>
-
-  <h3>Open<abbr>APE</abbr></h3>
-  <p><a href="https://github.com/REMEXLabs/OpenAPE">Open<abbr>APE</abbr></a>:
-    <!-- @@abbreviation expansion?? -->
-    personalisation framework; student project started in October 2016.
-  </p>
-
-
-  <h2 id="olb">Adaptive Online Banking Simulation</h2>
-  <p>For an overview of the features of the online banking simulation, see
-    <a href="https://www.youtube.com/watch?v=ljtXSxbTtQA"><abbr>HdM</abbr> Adaptable Online Banking Solution 2016</a>
-    on YouTube.
-    <br />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ljtXSxbTtQA" frameborder="0" allowfullscreen></iframe>
-  </p>
-  <p>
-    For a demo of an older version of the simulation, see
-    <a href="https://www.youtube.com/watch?v=qMqlkPyHx8Y"><abbr>HdM</abbr> Adaptable Online Banking Simulation (2014)</a>
-    on YouTube.
-  </p>
-  <!-- 
-  <h4><abbr>OLB</abbr> (Online Banking)</h4>
-  <p><a href="https://github.com/REMEXLabs/OLB"><abbr>OLB</abbr></a>.</p>
-  -->
-  <!-- @@The above repo has no code. Do we still need it? -->
-
-  <h3>hdm-bank</h3>
-  <p><a href="https://github.com/REMEXLabs/hdm-bank">hdm-bank</a>:
-    online banking user interface adapted to people with cognitive disabilities.
-    (Continuation of <a href="https://github.com/MarioAer/hdm-bank">bachelor thesis by Mario Erazo</a> in 2014.)
-  </p>
-
-  <h3>pictofy</h3>
-  <p><a href="https://github.com/REMEXLabs/pictofy">pictofy</a>
-    is a client-side plugin that enables pictogram support in webpages.
-    (Continuation of <a href="https://github.com/AlexVonB/pictofy">project by <span lang="de">Alexander von Bernuth</span></a>.)
-  </p>
+      <h3>Darwin</h3>
+      <p><a href="https://github.com/REMEXLabs/Darwin">Darwin</a>:
+        a Javascript framework for adaptive Web Components with 
+        <a href="http://gpii.net/"><abbr>GPII</abbr></a> support.
+      </p>
+    
+      <h3>Open<abbr>APE</abbr></h3>
+      <p><a href="https://github.com/REMEXLabs/OpenAPE">Open<abbr>APE</abbr></a>:
+        <!-- @@abbreviation expansion?? -->
+        personalisation framework; student project started in October 2016.
+      </p>
 
 
-  <h2>Cloud4all Statistical Matchmaker</h2>
-  <p>The following repositories contain code related to the 
-    statistical matchmaker developed for the 
-    <a href="http://cordis.europa.eu/project/rcn/101353_en.html">Cloud4all project</a>
-    (November 2011 - October 2015):
-  </p>
-  <ul>
-    <li>
-      <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker-Analysis">GPII-Statistical-Matchmaker-Analysis</a>:
-      the actual machine learning component of the statistical matchmaker.
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker">GPII-Statistical-Matchmaker</a>,
-      the statistical matchmaker's runtime component, which uses the data output by the analysis component.
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker-Data">GPII-Statistical-Matchmaker-Data</a>:
-      manually created training data for the analysis component.
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/GPII-Matchmaker-Evaluation">GPII-Matchmaker-Evaluation</a>.
-    </li>
-  </ul>
+      <h2 id="olb">Adaptive Online Banking Simulation</h2>
+      <p>For an overview of the features of the online banking simulation, see
+        <a href="https://www.youtube.com/watch?v=ljtXSxbTtQA"><abbr>HdM</abbr> Adaptable Online Banking Solution 2016</a>
+        on YouTube.
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ljtXSxbTtQA" allowfullscreen></iframe>
+      </p>
+      <p>
+        For a demo of an older version of the simulation, see
+        <a href="https://www.youtube.com/watch?v=qMqlkPyHx8Y"><abbr>HdM</abbr> Adaptable Online Banking Simulation (2014)</a>
+        on YouTube.
+      </p>
+      <!-- 
+      <h4><abbr>OLB</abbr> (Online Banking)</h4>
+      <p><a href="https://github.com/REMEXLabs/OLB"><abbr>OLB</abbr></a>.</p>
+      -->
+      <!-- @@The above repo was removed on 13.01.2017. -->
+
+      <h3>hdm-bank</h3>
+      <p><a href="https://github.com/REMEXLabs/hdm-bank">hdm-bank</a>:
+        online banking user interface adapted to people with cognitive disabilities.
+        (Continuation of <a href="https://github.com/MarioAer/hdm-bank">bachelor thesis by Mario Erazo</a> in 2014.)
+      </p>
+
+      <h3>pictofy</h3>
+      <p><a href="https://github.com/REMEXLabs/pictofy">pictofy</a>
+        is a client-side plugin that enables pictogram support in webpages.
+        (Continuation of <a href="https://github.com/AlexVonB/pictofy">project by <span lang="de">Alexander von Bernuth</span></a>.)
+      </p>
+    <!--/div-->
 
 
-  <h2>Smart Home</h2>
-  <ul>
-    <li><a href="https://github.com/REMEXLabs/urc"><abbr>URC</abbr></a>:
-      copy of a <a href="https://github.com/RomanKol/urc">student project</a>
-      related to smart homes, completed in the summer semester of 2015.
-      <!-- @@no licence??!! -->
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/SmartFridge">SmartFridge</a><!--  @@no description yet; has PDF in repo??-->
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/SmartKitchen-BLE-Gateway">SmartKitchen <abbr title="Bluetooth Low Energy">BLE</abbr> Gateway</a>
-      (requires <a href="https://github.com/IanHarvey/bluepy">bluepy</a>: Python interface to 
-      <a href="https://en.wikipedia.org/wiki/Bluetooth_low_energy">Bluetooth <abbr title="Low Energy">LE</abbr></a> on Linux).
-    </li>
-  </ul>
 
-  <h2><abbr>URC</abbr></h2>
-  <p><abbr>URC</abbr> stands for 
-    <a href="https://en.wikipedia.org/wiki/Universal_Remote_Console">Universal Remote Console</a>
-    (standard ISO 24752).
-  </p>
-  <ul>
-    <li>
-      <a href="https://github.com/REMEXLabs/res">res</a>: 
-      Ajax client to query and retrieve data from an OpenURC resource server.
-      (Project created by student <span lang="de">Alexander von Bernuth</span>.)
-    </li>
-  </ul>
-
-
-  <h2>Gamificaton</h2>
-  <h3>Bubbles</h3>
-  <p><a href="https://github.com/REMEXLabs/Bubbles">Bubbles</a>:
-    community server that uses gamification in the context of 
-    the development of (accessible) application.
-    See also
-    <a href="http://www.prosperity4all.eu/gamification-and-accessibility/">Gamification and Accessibility</a>
-    on the Prosperity4All website.
-    Deployed at <a href="https://bubbles.gpii.eu/">bubbles.gpii.eu</a>.
-  </p>
-  <!-- Will not be listed here:
-    * https://github.com/REMEXLabs/github-questifier - no licence !!??
-  -->
-
-
-  <h2>Other Themes</h2>
-  <h3>PersonaBrowser</h3>
-  <p>
-    <a href="https://github.com/REMEXLabs/PersonaBrowser">PersonaBrowser</a>.
-    <!-- Hallo Welt! -->
-    See the YouTube video
-    <a href="https://www.youtube.com/watch?v=TqcLnf2Fr78">PersonaBrowser - A User-Centered Classification Schema for <abbr>WCAG</abbr></a>.
-    <br />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TqcLnf2Fr78" frameborder="0" allowfullscreen></iframe>
-  </p>
-
-
-  <h2>Forked Or Branched Repositories</h2>
-  <p>The following repositories contain code that was not developed by
-    Remex. Some of these repositories are the output of student projects,
-    while other repositories are used in projects that are still running.
-  </p>
-  <ul>
-    <li>
-      <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016">Smart home projects by students, summer semester 2016</a>:
+    <!--div class="col-lg-6"-->
+      <h2>Cloud4all Statistical Matchmaker</h2>
+      <p>The following repositories contain code related to the 
+        statistical matchmaker developed for the 
+        <a href="http://cordis.europa.eu/project/rcn/101353_en.html">Cloud4all project</a>
+        (November 2011 - October 2015):
+      </p>
       <ul>
         <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/HELMUT">HELMUT</a>
+          <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker-Analysis">GPII-Statistical-Matchmaker-Analysis</a>:
+          the actual machine learning component of the statistical matchmaker.
         </li>
         <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SMARPET">SMARPET</a>
+          <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker">GPII-Statistical-Matchmaker</a>,
+          the statistical matchmaker's runtime component, which uses the data output by the analysis component.
         </li>
         <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SMEEP">SMEEP</a>
+          <a href="https://github.com/REMEXLabs/GPII-Statistical-Matchmaker-Data">GPII-Statistical-Matchmaker-Data</a>:
+          manually created training data for the analysis component.
         </li>
         <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SmartCare">SmartCare</a>
-        </li>
-        <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SmartMediCine">SmartMediCine</a>
+          <a href="https://github.com/REMEXLabs/GPII-Matchmaker-Evaluation">GPII-Matchmaker-Evaluation</a>.
         </li>
       </ul>
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015">SmartHome_SomSe2015</a>:
-      smart home project from the summer semester 2015:
+
+      <h2>Smart Home</h2>
+      <ul>
+        <li><a href="https://github.com/REMEXLabs/urc"><abbr>URC</abbr></a>:
+          copy of a <a href="https://github.com/RomanKol/urc">student project</a>
+          related to smart homes, completed in the summer semester of 2015.
+          <!-- @@no licence??!! -->
+        </li>
+        <li>
+          <a href="https://github.com/REMEXLabs/SmartFridge">SmartFridge</a><!--  @@no description yet; has PDF in repo??-->
+        </li>
+        <li>
+          <a href="https://github.com/REMEXLabs/SmartKitchen-BLE-Gateway">SmartKitchen <abbr title="Bluetooth Low Energy">BLE</abbr> Gateway</a>
+          (requires <a href="https://github.com/IanHarvey/bluepy">bluepy</a>: Python interface to 
+          <a href="https://en.wikipedia.org/wiki/Bluetooth_low_energy">Bluetooth <abbr title="Low Energy">LE</abbr></a> on Linux).
+        </li>
+      </ul>
+
+
+      <h2><abbr>URC</abbr></h2>
+      <p><abbr>URC</abbr> stands for 
+        <a href="https://en.wikipedia.org/wiki/Universal_Remote_Console">Universal Remote Console</a>
+        (standard ISO 24752).
+      </p>
       <ul>
         <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015/tree/master/NetAtmoProject">NetAtmo</a>.
-          <!-- @@no licence. -->
-        </li>
-        <li>
-          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015/tree/master/Vergissmeinnicht" lang="de">Vergissmeinnicht</a>.
-          <!-- @@no readme.md; no licence. -->
+          <a href="https://github.com/REMEXLabs/res">res</a>: 
+          Ajax client to query and retrieve data from an OpenURC resource server.
+          (Project created by student <span lang="de">Alexander von Bernuth</span>.)
         </li>
       </ul>
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/smarthome">smarthome</a>:
-      Eclipse SmartHome project.
-      <br />This is a duplicate of the official
-      <a href="https://github.com/eclipse/smarthome">Eclipse SmartHome™ project</a>;
-      please submit pull request to the original repository.
-    </li>
-    <li>
-      <a href="https://github.com/REMEXLabs/openhab-distro">openhab-distro</a>
-      (open Home Automation Bus (<a href="http://www.openhab.org/">open<abbr>HAB</abbr></a>): 
-      integration platform for home automation based on Java and 
-      <a href="https://en.wikipedia.org/wiki/OSGi"><abbr title="Open Services Gateway initiative">OSGi</abbr></a>).
-      <br />This is a duplicate of the official
-      <a href="https://github.com/openhab/openhab-distro">open<abbr>HAB</abbr> repository</a>;
-      please submit pull request to the original repository.
-    </li>
-  </ul>
 
+
+      <h2>Gamificaton</h2>
+      <h3>Bubbles</h3>
+      <p><a href="https://github.com/REMEXLabs/Bubbles">Bubbles</a>:
+        community server that uses gamification in the context of 
+        the development of (accessible) application.
+        See also
+        <a href="http://www.prosperity4all.eu/gamification-and-accessibility/">Gamification and Accessibility</a>
+        on the Prosperity4All website.
+        Deployed at <a href="https://bubbles.gpii.eu/">bubbles.gpii.eu</a>.
+      </p>
+      <!-- Will not be listed here:
+        * https://github.com/REMEXLabs/github-questifier - no licence !!??
+      -->
+
+
+
+      <h2>Other Themes</h2>
+      <h3>PersonaBrowser</h3>
+      <p>
+        <a href="https://github.com/REMEXLabs/PersonaBrowser">PersonaBrowser</a>.
+        <!-- Hallo Welt! -->
+        See the YouTube video
+        <a href="https://www.youtube.com/watch?v=TqcLnf2Fr78">PersonaBrowser - A User-Centered Classification Schema for <abbr>WCAG</abbr></a>.
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TqcLnf2Fr78" allowfullscreen></iframe>
+      </p>
+
+
+
+
+      <h2>Forked Or Branched Repositories</h2>
+      <p>The following repositories contain code that was not developed by
+        Remex. Some of these repositories are the output of student projects,
+        while other repositories are used in projects that are still running.
+      </p>
+      <ul>
+        <li>
+          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016">Smart home projects by students, summer semester 2016</a>:
+          <ul>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/HELMUT">HELMUT</a>
+            </li>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SMARPET">SMARPET</a>
+            </li>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SMEEP">SMEEP</a>
+            </li>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SmartCare">SmartCare</a>
+            </li>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2016/tree/master/SmartMediCine">SmartMediCine</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015">SmartHome_SomSe2015</a>:
+          smart home project from the summer semester 2015:
+          <ul>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015/tree/master/NetAtmoProject">NetAtmo</a>.
+              <!-- @@no licence. -->
+            </li>
+            <li>
+              <a href="https://github.com/REMEXLabs/SmartHome_SomSe2015/tree/master/Vergissmeinnicht" lang="de">Vergissmeinnicht</a>.
+              <!-- @@no readme.md; no licence. -->
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://github.com/REMEXLabs/smarthome">smarthome</a>:
+          Eclipse SmartHome project.
+          <br />This is a duplicate of the official
+          <a href="https://github.com/eclipse/smarthome">Eclipse SmartHome™ project</a>;
+          please submit pull request to the original repository.
+        </li>
+        <li>
+          <a href="https://github.com/REMEXLabs/openhab-distro">openhab-distro</a>
+          (open Home Automation Bus (<a href="http://www.openhab.org/">open<abbr>HAB</abbr></a>): 
+          integration platform for home automation based on Java and 
+          <a href="https://en.wikipedia.org/wiki/OSGi"><abbr title="Open Services Gateway initiative">OSGi</abbr></a>).
+          <br />This is a duplicate of the official
+          <a href="https://github.com/openhab/openhab-distro">open<abbr>HAB</abbr> repository</a>;
+          please submit pull request to the original repository.
+        </li>
+      </ul>
+    <!--/div-->
+  <!--/div-->
 </main>
 
 <footer>
@@ -252,4 +280,4 @@
 </footer>
 </body>
 </html>
-
+<!-- If you're reading source code, you have too much time. -->

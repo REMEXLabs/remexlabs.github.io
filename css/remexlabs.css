@@ -26,6 +26,9 @@ header, main, footer {
 header {
   margin-bottom: 40px;
 }
+header h1, header.jumbotron h1, header p, main h2 {
+  color: #04378B;
+}
 
 footer {
   color: #3F3F3F; /* #2FB7EC cannot be used for text on white background; contrast is too low; #6F6F6F still fails at Level AAA */

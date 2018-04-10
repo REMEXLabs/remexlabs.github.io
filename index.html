@@ -10,8 +10,8 @@
   <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/bootstrap-theme.min.css" />
   <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/jumbotron-narrow.css" />
+  <link rel="stylesheet" type="text/css" href="./jslibs/plyr-3.10/plyr.css" />
   <link rel="stylesheet" type="text/css" href="css/remexlabs.css" />
-  <link rel="stylesheet" type="text/css" href="./jslibs/plyr-2.0.13/plyr.css" />
   <link rel="shortcut icon" href="img/favicon_hdm_2017.ico" type="image/ico" />
   <meta content="noindex, nofollow" name="robots" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,6 +19,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <style type="text/css"> div.plyr__video-embed + p { margin-top: 14px; } /* added for plyr 3.10 */ </style>
 </head>
 <body>
 <div>
@@ -73,10 +74,12 @@
       </p>
       <p>For an introduction to Accessible Web Components, see the YouTube video
         <a href="https://www.youtube.com/watch?v=ZuITbgUnNTk">Adaptive Web Components 2016 - Introduction</a>.
-        <br />
-        <div data-type="youtube" data-video-id="ZuITbgUnNTk"></div>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuITbgUnNTk" allowfullscreen></iframe> -->
       </p>
+      <div class="plyr__video-embed" id="awc2016-intro">
+        <iframe src="https://www.youtube.com/embed/ZuITbgUnNTk?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+      </div>
+      <!-- <div class="plyrVideo" id="awc2016-intro" data-plyr-provider="youtube" data-plyr-embed-id="https://www.youtube.com/embed/ZuITbgUnNTk"></div> -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuITbgUnNTk" allowfullscreen></iframe> -->
 
       <h3>Darwin</h3>
       <p><a href="https://github.com/REMEXLabs/Darwin">Darwin</a>:
@@ -107,16 +110,18 @@
       <p>For an overview of the features of the online banking simulation, see
         <a href="https://www.youtube.com/watch?v=ljtXSxbTtQA"><abbr>HdM</abbr> Adaptable Online Banking Solution 2016</a>
         on YouTube.
-        <br />
-        <div data-type="youtube" data-video-id="ljtXSxbTtQA"></div>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ljtXSxbTtQA" allowfullscreen></iframe> -->
       </p>
+      <div class="plyr__video-embed" id="olb2016Vid">
+        <iframe src="https://www.youtube.com/embed/ljtXSxbTtQA?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+      </div>
+      <!-- <div class="plyrVideo" id="olb2016Vid" data-plyr-provider="youtube" data-plyr-embed-id="https://www.youtube.com/embed/ljtXSxbTtQA"></div> -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ljtXSxbTtQA" allowfullscreen></iframe> -->
       <p>
         For a demo of an older version of the simulation, see
         <a href="https://www.youtube.com/watch?v=qMqlkPyHx8Y"><abbr>HdM</abbr> Adaptable Online Banking Simulation (2014)</a>
         on YouTube.
       </p>
-      <!-- 
+      <!--
       <h4><abbr>OLB</abbr> (Online Banking)</h4>
       <p><a href="https://github.com/REMEXLabs/OLB"><abbr>OLB</abbr></a>.</p>
       -->
@@ -220,10 +225,12 @@
         <a href="https://github.com/REMEXLabs/PersonaBrowser">PersonaBrowser</a>.
         See the YouTube video
         <a href="https://www.youtube.com/watch?v=TqcLnf2Fr78">PersonaBrowser - A User-Centered Classification Schema for <abbr>WCAG</abbr></a>.
-        <br />
-        <div data-type="youtube" data-video-id="TqcLnf2Fr78"></div>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/TqcLnf2Fr78" allowfullscreen></iframe> -->
       </p>
+      <div class="plyr__video-embed" id="personabrowserVideo">
+        <iframe src="https://www.youtube.com/embed/TqcLnf2Fr78?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+      </div>
+      <!-- <div class="plyrVideo" id="personabrowserVideo" data-plyr-provider="youtube" data-plyr-embed-id="https://www.youtube.com/embed/TqcLnf2Fr78"></div> -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/TqcLnf2Fr78" allowfullscreen></iframe> -->
 
       <h2>Archived Repositories</h2>
       <p>The following repositories have been archived and will not be updated:</p>
@@ -291,13 +298,25 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="jslibs/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="jslibs/plyr-2.0.13/plyr.js" type="text/javascript"></script>
+<script src="jslibs/plyr-3.10/plyr.js" type="text/javascript"></script>
 <!-- Rangetouch to fix <input type="range"> on touch devices (see https://rangetouch.com) -->
 
 <script src="jslibs/rangetouch-1.0.5/rangetouch.js" type="text/javascript"></script>
+<!--
 <script type="text/javascript">
   plyr.setup({ captions: { defaultActive: true }, controls: ['play', 'progress', 'currrent-time', 'volume', 'mute', 'captions', 'fullscreen'], tooltips: { controls: true, seek: true}, displayDuration: true });
   console.log("plyr.supported: " + plyr.supported("video"));
+</script>
+-->
+<script type="text/javascript">
+  //const awcplayer = new Plyr('#awc2016-intro');
+  const player = new Plyr(document.querySelectorAll(".plyr__video-embed"), {
+      "controls": ["mute", "progress", "volume", "captions"],
+      "settings": ["captions", "speed"],
+      "hideControls": false,
+      "displayDuration": true,
+      "autoplay": false
+  });
 </script>
 </body>
 </html>

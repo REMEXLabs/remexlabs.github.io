@@ -68,6 +68,7 @@ iframe[src^="https://www.youtube.com/"] {
   margin-top: 10px;
 }
 
+div.plyr__video-embed + p { margin-top: 14px; } /* added for plyr 3.10 */
 } /* END @media all*/
 
 

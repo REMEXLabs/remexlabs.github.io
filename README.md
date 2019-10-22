@@ -2,6 +2,10 @@
 
 Repository for the [public-facing GitHub pages](http://remexlabs.github.io/).
 
+Cloning:
+
+     `git clone https://github.com/REMEXLabs/remexlabs.github.io`
+
 ## Licence
 
 Creative Commons Attribution-ShareAlike 4.0 International 
